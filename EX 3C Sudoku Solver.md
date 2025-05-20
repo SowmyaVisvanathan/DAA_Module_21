@@ -4,11 +4,20 @@
 To write a python program to find the solution of sudoku puzzle using Backtracking.
 
 ## Algorithm
-1. 
-2. 
-3. 
-4.  
-5.   
+1. Scan the board to find an empty cell (value 0).
+2. For that cell (i, j), try placing values from 1 to 9.
+3. For each value:
+   - Check validity using isPossible():
+   - Not present in the same row.
+   - Not present in the same column.
+   - Not present in the corresponding 3×3 subgrid.
+
+4. If valid:
+   - Place the value in the cell.
+   - Recursively call solve() to fill the rest.
+   - If dead-end reached, backtrack by resetting the cell to 0.
+5. If all cells are filled (no 0 found), print the board (solution found).
+6. This explores all possible valid board configurations recursively. 
 
 ## Program:
 ```
