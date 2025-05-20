@@ -4,11 +4,17 @@
 To write a python program to check whether Hamiltonian path exits in the given graph.
 
 ## Algorithm
-1. 
-2. 
-3. 
-4.  
-5.   
+1. Start path from vertex 0.
+2. Use recursion to try adding each unvisited vertex that is adjacent to the last vertex in the path.
+3. At each step (pos):
+   - If pos == N, a valid Hamiltonian path is found → return True.
+   - Else, for each vertex v from 0 to N-1:
+     - If v is adjacent to last vertex in path (adj[path[pos-1]][v] == 1) and v is not already in path:
+       - Add v to current path.
+       - Recurse to next position.
+       - If it returns True, propagate result.
+       - Else, backtrack (path[pos] = -1).
+4. If no path is found after trying all options → return False.
 
 ## Program:
 ```
