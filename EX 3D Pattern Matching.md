@@ -3,14 +3,14 @@
 ## AIM:
 To write a python program to implement pattern matching on the given string using Brute Force algorithm.
 
-
-
 ## Algorithm
-1. 
-2. 
-3. 
-4.  
-5.   
+1. Input: Two strings s1 (text) and s2 (pattern).
+2. Let n = len(s1) and m = len(s2).
+3. Loop from i = 0 to n - m:
+   - Set j = 0.
+   - While characters match (s1[i + j] == s2[j]), increment j.
+   - If j == m, full pattern matched → return starting index i.
+4. If no match found after all shifts, return -1.   
 
 ## Program:
 ```
