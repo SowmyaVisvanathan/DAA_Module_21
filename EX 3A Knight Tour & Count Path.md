@@ -4,11 +4,18 @@
 To write a python program to find minimum steps to reach to specific cell in minimum moves by knight
 
 ## Algorithm
-1. 
-2. 
-3. 
-4.  
-5.   
+1. Initialize knight's 8 possible moves (dx, dy).
+2. Create a queue for BFS. Push the starting position with distance = 0.
+3. Mark the starting cell as visited in a 2D visited array.
+4. While queue is not empty:
+   - Pop the front cell.
+   - If it's the target, return its distance.
+   - For all 8 possible knight moves:
+     - Calculate new (x, y) position.
+     - If inside board and not visited:
+       - Mark as visited.
+       - Push to queue with dist + 1.
+5. If target is not reached, return ∞ (not reachable).
 
 ## Program:
 ```
