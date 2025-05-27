@@ -1,5 +1,5 @@
 # EX 3D Pattern Matching
-## DATE: 22-04-2025
+## DATE: 29-03-2025
 ## AIM:
 To write a python program to implement pattern matching on the given string using Brute Force algorithm.
 
